@@ -44,7 +44,7 @@ class block_unitec_student_help extends block_base {
         $this->content->text = '';
         $this->content->footer = '';
         
-        // Select the logo to show
+        // List of all the logos
 		$logo1file = $CFG->wwwroot.'/blocks/unitec_student_help/img/library.png';
         $help1logo = '<a href="http://library.unitec.ac.nz" target="_blank"><img src="'.$logo1file.'" alt="Library" style="width: 90%; margin-bottom: 3px;"></a>';
         
@@ -56,7 +56,8 @@ class block_unitec_student_help extends block_base {
         
         $logo4file = $CFG->wwwroot.'/blocks/unitec_student_help/img/studytoolbox.png';
         $help4logo = '<a href="http://libguides.unitec.ac.nz/studytoolbox" target="_blank"><img src="'.$logo4file.'" alt="Study Toolbox" style="width: 90%; margin-bottom: 3px;"></a>';
-
+        
+        // Choose the order the logos will display in the block
         $this->content->text = $help1logo.$help2logo.$help4logo.$help3logo;
        
         return $this->content;
