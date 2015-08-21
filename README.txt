@@ -34,21 +34,17 @@ The folder should be called unitec_student_help
 
 To update the links:
 Open up block_unitec_student_help.php
-In the section //List of all the logos
-Each logo has two variables:
-the file which points to the image stored in the img folder
-(Note that this should alwasy remain a relative link)
-and the logo which has the URL of the help service and references
-the first variable.
+In the section //List of all the logos:
 
-To alter one, simply alter the img location and URL.
+TO UPDATE/ALTER ONE
+Change the URL (and if needed the text).
 
-To add one, copy two of the existing lines and update the varaible
-name to include the next sequential number (this must be done in three
-places, once on the first line and twice on the second) and update
-the image and help resource URL.
-Update the alt text.
-Make sure the image is saved in the img folder.
+TO ADD ONE
+Copy one of the other strings, rename the variable to have the next
+number in sequence.
+Alter as above (URL and text).
+Add to the // Choose the order the logos will display in the block
+string $this underneath
 
 ======================
  Changelog
@@ -57,4 +53,5 @@ Make sure the image is saved in the img folder.
 Block created.
 
 0.2
-README File updated
+README File updated to include instructions
+Removed images from block, replaced with divs and style sheet

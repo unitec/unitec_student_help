@@ -1,3 +1,15 @@
 .block_unitec_student_help .content {
     text-align: center;
 }
+
+.block_unitec_student_help .content .helpbutton {
+    width: 98%;
+    height: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+}

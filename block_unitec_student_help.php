@@ -45,20 +45,18 @@ class block_unitec_student_help extends block_base {
         $this->content->footer = '';
         
         // List of all the logos
-		$logo1file = $CFG->wwwroot.'/blocks/unitec_student_help/img/library.png';
-        $help1logo = '<a href="http://library.unitec.ac.nz" target="_blank"><img src="'.$logo1file.'" alt="Library" style="width: 98%; margin-bottom: 3px;"></a>';
+        $help1button = '<a href="http://library.unitec.ac.nz/" target="_blank"><div class="helpbutton">Testing help logo</div></a>';
         
-        $logo2file = $CFG->wwwroot.'/blocks/unitec_student_help/img/tpa.png';
-        $help2logo = '<a href="http://moodle.unitec.ac.nz/course/view.php?id=360" target="_blank"><img src="'.$logo2file.'" alt="TPA Learning Centre" style="width: 98%; margin-bottom: 3px;"></a>';
+        $help2button = '<a href="https://moodle.unitec.ac.nz/course/view.php?id=360" target="_blank"><div class="helpbutton">Te Puna Ako Learning Centre</div></a>';
         
-        $logo3file = $CFG->wwwroot.'/blocks/unitec_student_help/img/askims.png';
-        $help3logo = '<a href="http://askims.unitec.ac.nz" target="_blank"><img src="'.$logo3file.'" alt="Ask IMS" style="width: 98%; margin-bottom: 3px;"></a>';
+        $help3button = '<a href="http://askims.unitec.ac.nz/" target="_blank"><div class="helpbutton">Ask IMS: Technical Support</div></a>';
         
-        $logo4file = $CFG->wwwroot.'/blocks/unitec_student_help/img/studytoolbox.png';
-        $help4logo = '<a href="http://libguides.unitec.ac.nz/studytoolbox" target="_blank"><img src="'.$logo4file.'" alt="Study Toolbox" style="width: 98%; margin-bottom: 3px;"></a>';
-        
-        // Choose the order the logos will display in the block
-        $this->content->text = $help1logo.$help2logo.$help4logo.$help3logo;
+        $help4button = '<a href="http://libguides.unitec.ac.nz/studytoolbox" target="_blank"><div class="helpbutton">Study Toolbox</div></a>';
+		
+		$help5button = '<a href="https://moodle.unitec.ac.nz/" target="_blank"><div class="helpbutton">Testing help logo</div></a>';
+		
+		// Choose the order the logos will display in the block
+        $this->content->text = $help1button.$help2button.$help4button.$help3button.$help5button;
        
         return $this->content;
     }
